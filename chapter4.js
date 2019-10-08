@@ -113,6 +113,6 @@
 // console.log(arr.length);
 // console.log(typeof arr);
 
-// arr.push
+// arr.push()
 // arr[3] = ""
 // arr[arr.length]=
