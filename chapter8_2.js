@@ -7,7 +7,8 @@
 
 // plus(5,10,function(res){
 //     console.log(res);
-// };
+// });
+
 
 // (function (name){
 //     console.log('즉시실행함수 -> ' + name)

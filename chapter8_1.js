@@ -31,7 +31,6 @@
 //     console.log('Function can be used as the argument');
 // });
 
-
  // 리턴값으로 활용
 
 //  let b = function(){
@@ -45,8 +44,8 @@
 
 // 함수 객체의 기본 프로퍼티
 
-// function add(x,y){
+// function add(x,y,z){
 //     return x + y;
 // }
 
-// console.dir(add);
+// console.log(add);

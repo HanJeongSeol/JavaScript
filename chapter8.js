@@ -26,12 +26,12 @@
 // };
 // console.log(add1(3,4)); // 7 
 
-let factorialVar = function factorial(n){
-    if(n<=1){
-        return 1;
-    }
-    return n * factorial(n-1);
-};
-console.log(factorialVar(4));  // 24
-console.log(factorial(4));  // error : factorial is not definde;
+// let factorialVar = function factorial(n){
+//     if(n<=1){
+//         return 1;
+//     }
+//     return n * factorial(n-1);
+// };
+// console.log(factorialVar(4));  // 24
+// console.log(factorial(4));  // error : factorial is not definde;
 
