@@ -1,20 +1,17 @@
-var x = 'xxx';
-function foo () {
-  var y = 'yyy';
-  var c = 'ccc';
-  function bar () {
-    var z = 'zzz';
-    console.log(x + y + z);
-  }
-  console.dir(bar);
+// var x = 'xxx';
+// function foo () {
+//   var y = 'yyy';
+//   function bar () {
+//     var z = 'zzz';
+//     console.log(x + y + z);
+//   }
+//   console.dir(bar);
 
-  bar();
-}
-foo();
-console.log(c);
-
-console.dir(foo);
-console.dir(window);
+//   bar();
+// }
+// foo();
+// console.dir(foo);
+// console.dir(window);
 
 // let x = 'xxx';
 // function foo () {
@@ -141,3 +138,18 @@ console.dir(window);
 // // global 실행 컨텍스트
 
 // foodThoughts();
+
+
+foo();
+bar();
+
+var foo = function(){
+    console.log("foo and x = " + x);
+};
+
+function bar(){
+    console.log("bar and x = " +x);
+}
+
+
+var x = 1;
