@@ -34,22 +34,24 @@
 
 // printFunc();
 
-// 전역 필드에서의 함수 
-var value = "value1";
+// // 전역 필드에서의 함수 
+// var value = "value1";
 
-function printValue(){
-    return value;
-}
+// function printValue(){
+//     return value;
+// }
 
-function printFunc(func){
-    var value = "value2";
-    console.log(func());
-}
+// function printFunc(func){
+//     var value = "value2";
+//     console.log(func());
+// }
 
-printFunc(printValue);  // value1
+// printFunc(printValue);  // value1
 
-// foo();
-// bar();
+
+// // 호이스팅 
+// foo();      // TypeError
+// bar();      // bar and x = undefined
 
 // var foo = function(){
 //     console.log("foo and x = " + x);
@@ -61,3 +63,21 @@ printFunc(printValue);  // value1
 
 
 // var x = 1;
+
+// 호이스팅된 코드
+var foo;
+
+function bar(){
+    console.log("bar and x = " + x);
+}
+
+var x;
+
+foo(); // TypeError
+bar(); // bar and x = undefined
+
+foo = function(){
+    console.log("foo and x = " + x);
+}
+
+x = 1;
