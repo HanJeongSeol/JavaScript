@@ -65,19 +65,19 @@
 // var x = 1;
 
 // 호이스팅된 코드
-var foo;
+// var foo;
 
-function bar(){
-    console.log("bar and x = " + x);
-}
+// function bar(){
+//     console.log("bar and x = " + x);
+// }
 
-var x;
+// var x;
 
-foo(); // TypeError
-bar(); // bar and x = undefined
+// foo(); // TypeError
+// bar(); // bar and x = undefined
 
-foo = function(){
-    console.log("foo and x = " + x);
-}
+// foo = function(){
+//     console.log("foo and x = " + x);
+// }
 
-x = 1;
+// x = 1;
