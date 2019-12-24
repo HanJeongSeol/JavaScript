@@ -81,33 +81,33 @@
 // console.dir(window);
 // console.dir(HelloFunc.prototype.call);
 
-// // // 클로저를 사용하지 않고 배열에 함수 넣기
-var arr = [];
+// // 클로저를 사용하지 않고 배열에 함수 넣기
+// var arr = [];
 
-for(var i = 0; i<5; i++){       // 반복문에서 클로져는 반복문이 끝난 시점
-    console.log(i);
-    arr[i] = function(){
-        return i;
-    }
-}
-
-for(var index in arr){
-    console.log(arr[index]());
-}
-
-console.dir(arr);
-
-// // // 클로저를 사용하여 배열에 함수 넣기
-// var arr = []
-// for(var i = 0; i < 5; i++){
-//     arr[i] = function(id) {
-//         return function(){
-//             return id;
-//         }
-//     }(i);   // 즉시실행함수
+// for(var i = 0; i<5; i++){       // 반복문에서 클로져는 반복문이 끝난 시점
+//     console.log(i);
+//     arr[i] = function(){
+//         return i;
+//     }
 // }
-// for(var index in arr) {
+
+// for(var index in arr){
 //     console.log(arr[index]());
 // }
 
-// console.dir(arr[1]);
+// console.dir(arr);
+
+// // 클로저를 사용하여 배열에 함수 넣기
+var arr = [];
+for(var i = 0; i < 5; i++){
+    arr[i] = function(id) {
+        return function(){
+            return id;
+        }
+    }(i);   // 즉시실행함수
+}
+for(var index in arr) {
+    console.log(arr[index]());
+}
+
+console.dir(arr[1]);
